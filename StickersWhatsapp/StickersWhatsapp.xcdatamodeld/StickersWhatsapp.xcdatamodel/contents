@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ImagensUsuario" representedClassName="ImagensUsuario" syncable="YES" codeGenerationType="class">
+        <attribute name="imagem" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="pacotes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PacotesUsuario" inverseName="imagem" inverseEntity="PacotesUsuario" syncable="YES"/>
+    </entity>
+    <entity name="PacotesFavoritos" representedClassName="PacotesFavoritos" syncable="YES" codeGenerationType="class">
+        <attribute name="favorito" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="identificador" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PacotesUsuario" representedClassName="PacotesUsuario" syncable="YES" codeGenerationType="class">
+        <attribute name="corPrimaria" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="corSecundaria" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identificador" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imagem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ImagensUsuario" inverseName="pacotes" inverseEntity="ImagensUsuario" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ImagensUsuario" positionX="223.31640625" positionY="-23.765625" width="128" height="73"/>
+        <element name="PacotesFavoritos" positionX="-75.58203125" positionY="-146.7265625" width="128" height="75"/>
+        <element name="PacotesUsuario" positionX="-72.6953125" positionY="-16.85546875" width="128" height="103"/>
+    </elements>
 </model>

@@ -7,23 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B254205721D12949500004 /* Pods_StickersWhatsapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB529A1C0EE6D7FCE79BA36 /* Pods_StickersWhatsapp.framework */; };
+		E009A3D221DCD5E700EAE9B7 /* EmAltaPropagandaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009A3D121DCD5E700EAE9B7 /* EmAltaPropagandaTableViewCell.swift */; };
+		E009A3E321DD195400EAE9B7 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009A3E221DD195400EAE9B7 /* TutorialViewController.swift */; };
+		E009A3E521DD197000EAE9B7 /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009A3E421DD197000EAE9B7 /* TutorialCollectionViewCell.swift */; };
+		E009A3F921DD52FC00EAE9B7 /* ListaCriadaPeloUsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009A3F821DD52FC00EAE9B7 /* ListaCriadaPeloUsuarioTableViewCell.swift */; };
+		E009A3FB21DD55BC00EAE9B7 /* ListaCriadaPeloUsuarioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009A3FA21DD55BC00EAE9B7 /* ListaCriadaPeloUsuarioCollectionViewCell.swift */; };
+		E009A3FE21DE1D6900EAE9B7 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009A3FD21DE1D6900EAE9B7 /* GradientView.swift */; };
+		E009A40021DE20CE00EAE9B7 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E009A3FF21DE20CE00EAE9B7 /* UIImageColors.swift */; };
+		E0234A9821D8EA9B00643102 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0234A9721D8EA9B00643102 /* WebP.framework */; };
+		E0234AA321D8EAAE00643102 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0234A9921D8EAAD00643102 /* YYAnimatedImageView.m */; };
+		E0234AA421D8EAAE00643102 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0234A9B21D8EAAD00643102 /* YYImage.m */; };
+		E0234AA521D8EAAE00643102 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0234A9E21D8EAAD00643102 /* YYFrameImage.m */; };
+		E0234AA621D8EAAE00643102 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E0234AA021D8EAAD00643102 /* YYSpriteSheetImage.m */; };
+		E0234AA721D8EAAE00643102 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E0234AA221D8EAAE00643102 /* YYImageCoder.m */; };
+		E0234AB621D9005100643102 /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0234AB521D9005100643102 /* FavoritosViewController.swift */; };
+		E0234AB821D9006900643102 /* FavoritosCelulaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0234AB721D9006900643102 /* FavoritosCelulaTableViewCell.swift */; };
+		E0234ABA21D9007600643102 /* FavoritosVazioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0234AB921D9007600643102 /* FavoritosVazioTableViewCell.swift */; };
+		E036935821D64442004920C5 /* CameraCropController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036935721D64442004920C5 /* CameraCropController.swift */; };
+		E036935A21D64AF3004920C5 /* RevisaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036935921D64AF3004920C5 /* RevisaoViewController.swift */; };
+		E036935C21D65B38004920C5 /* Extensoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E036935B21D65B38004920C5 /* Extensoes.swift */; };
+		E06CABFD21D5395500BEE962 /* BotaoComShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CABFC21D5395500BEE962 /* BotaoComShadow.swift */; };
+		E06CABFF21D5424B00BEE962 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CABFE21D5424B00BEE962 /* Gif.swift */; };
+		E06CAC0321D542CA00BEE962 /* CriarOSeuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CAC0221D542CA00BEE962 /* CriarOSeuViewController.swift */; };
+		E06CAC0521D5461100BEE962 /* crie_o_seu_.gif in Resources */ = {isa = PBXBuildFile; fileRef = E06CAC0421D5461100BEE962 /* crie_o_seu_.gif */; };
+		E06CAC2721D63C4000BEE962 /* UsuarioCriandoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06CAC2621D63C4000BEE962 /* UsuarioCriandoViewController.swift */; };
 		E08712BF21CC191500FD766A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08712BE21CC191500FD766A /* AppDelegate.swift */; };
-		E08712C121CC191500FD766A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08712C021CC191500FD766A /* ViewController.swift */; };
 		E08712C421CC191500FD766A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08712C221CC191500FD766A /* Main.storyboard */; };
 		E08712C721CC191500FD766A /* StickersWhatsapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E08712C521CC191500FD766A /* StickersWhatsapp.xcdatamodeld */; };
 		E08712C921CC191700FD766A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08712C821CC191700FD766A /* Assets.xcassets */; };
 		E08712CC21CC191700FD766A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08712CA21CC191700FD766A /* LaunchScreen.storyboard */; };
+		E09A606F21CD4864002A560D /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A606E21CD4864002A560D /* DetalhesViewController.swift */; };
+		E09A607121CD4A88002A560D /* DetalhesListaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A607021CD4A88002A560D /* DetalhesListaCollectionViewCell.swift */; };
+		E09A608921CD5FF6002A560D /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A607921CD5FF5002A560D /* Sticker.swift */; };
+		E09A608D21CD5FF6002A560D /* WebPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A607E21CD5FF5002A560D /* WebPManager.swift */; };
+		E09A608E21CD5FF6002A560D /* StickerPackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A607F21CD5FF5002A560D /* StickerPackManager.swift */; };
+		E09A609021CD5FF6002A560D /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A608221CD5FF5002A560D /* ImageData.swift */; };
+		E09A609121CD5FF6002A560D /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A608421CD5FF5002A560D /* Limits.swift */; };
+		E09A609221CD5FF6002A560D /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A608521CD5FF6002A560D /* Interoperability.swift */; };
+		E09A609321CD5FF6002A560D /* StickerPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A608621CD5FF6002A560D /* StickerPack.swift */; };
+		E09A60BD21CD6D98002A560D /* tray.png in Resources */ = {isa = PBXBuildFile; fileRef = E09A60BC21CD6D97002A560D /* tray.png */; };
+		E09A60DB21CD737E002A560D /* Figurinhas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09A60DA21CD737E002A560D /* Figurinhas.swift */; };
+		E0F2AC6C21D95F6F00A90C71 /* SobreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F2AC6B21D95F6F00A90C71 /* SobreTableViewCell.swift */; };
+		E0F2AC6E21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F2AC6D21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift */; };
+		E0F2AC7021D95F8D00A90C71 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F2AC6F21D95F8C00A90C71 /* SobreViewController.swift */; };
+		E0F2AC7421D9946600A90C71 /* PreencherNomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F2AC7321D9946600A90C71 /* PreencherNomeViewController.swift */; };
+		E0FE2AE421CD019F004F216A /* EmAltaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FE2AE321CD019F004F216A /* EmAltaTableViewController.swift */; };
+		E0FE2AE621CD01AD004F216A /* EmAltaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FE2AE521CD01AD004F216A /* EmAltaTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EBD8ED20EDE3A4DDBA09CE7 /* Pods-StickersWhatsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickersWhatsapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-StickersWhatsapp/Pods-StickersWhatsapp.release.xcconfig"; sourceTree = "<group>"; };
+		5BB529A1C0EE6D7FCE79BA36 /* Pods_StickersWhatsapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickersWhatsapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F39E4D80A247B93666C45A /* Pods-StickersWhatsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickersWhatsapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StickersWhatsapp/Pods-StickersWhatsapp.debug.xcconfig"; sourceTree = "<group>"; };
+		E009A3D121DCD5E700EAE9B7 /* EmAltaPropagandaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmAltaPropagandaTableViewCell.swift; sourceTree = "<group>"; };
+		E009A3E221DD195400EAE9B7 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		E009A3E421DD197000EAE9B7 /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
+		E009A3EC21DD35D000EAE9B7 /* PacotesFavoritos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PacotesFavoritos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E009A3ED21DD35D000EAE9B7 /* PacotesFavoritos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PacotesFavoritos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E009A3EE21DD35D000EAE9B7 /* PacotesUsuario+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PacotesUsuario+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E009A3EF21DD35D000EAE9B7 /* PacotesUsuario+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PacotesUsuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E009A3F021DD35D000EAE9B7 /* ImagensUsuario+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagensUsuario+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E009A3F121DD35D000EAE9B7 /* ImagensUsuario+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagensUsuario+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E009A3F821DD52FC00EAE9B7 /* ListaCriadaPeloUsuarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCriadaPeloUsuarioTableViewCell.swift; sourceTree = "<group>"; };
+		E009A3FA21DD55BC00EAE9B7 /* ListaCriadaPeloUsuarioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCriadaPeloUsuarioCollectionViewCell.swift; sourceTree = "<group>"; };
+		E009A3FD21DE1D6900EAE9B7 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E009A3FF21DE20CE00EAE9B7 /* UIImageColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
+		E0234A9721D8EA9B00643102 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = StickersWhatsapp/WebP.framework; sourceTree = "<group>"; };
+		E0234A9921D8EAAD00643102 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAnimatedImageView.m; sourceTree = "<group>"; };
+		E0234A9A21D8EAAD00643102 /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
+		E0234A9B21D8EAAD00643102 /* YYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImage.m; sourceTree = "<group>"; };
+		E0234A9C21D8EAAD00643102 /* YYImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageCoder.h; sourceTree = "<group>"; };
+		E0234A9D21D8EAAD00643102 /* YYFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFrameImage.h; sourceTree = "<group>"; };
+		E0234A9E21D8EAAD00643102 /* YYFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFrameImage.m; sourceTree = "<group>"; };
+		E0234A9F21D8EAAD00643102 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		E0234AA021D8EAAD00643102 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
+		E0234AA121D8EAAD00643102 /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
+		E0234AA221D8EAAE00643102 /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
+		E0234AB521D9005100643102 /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
+		E0234AB721D9006900643102 /* FavoritosCelulaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosCelulaTableViewCell.swift; sourceTree = "<group>"; };
+		E0234AB921D9007600643102 /* FavoritosVazioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosVazioTableViewCell.swift; sourceTree = "<group>"; };
+		E036935721D64442004920C5 /* CameraCropController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCropController.swift; sourceTree = "<group>"; };
+		E036935921D64AF3004920C5 /* RevisaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevisaoViewController.swift; sourceTree = "<group>"; };
+		E036935B21D65B38004920C5 /* Extensoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensoes.swift; sourceTree = "<group>"; };
+		E06CABFC21D5395500BEE962 /* BotaoComShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoComShadow.swift; sourceTree = "<group>"; };
+		E06CABFE21D5424B00BEE962 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		E06CAC0221D542CA00BEE962 /* CriarOSeuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarOSeuViewController.swift; sourceTree = "<group>"; };
+		E06CAC0421D5461100BEE962 /* crie_o_seu_.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = crie_o_seu_.gif; sourceTree = "<group>"; };
+		E06CAC2621D63C4000BEE962 /* UsuarioCriandoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioCriandoViewController.swift; sourceTree = "<group>"; };
 		E08712BB21CC191500FD766A /* StickersWhatsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickersWhatsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08712BE21CC191500FD766A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E08712C021CC191500FD766A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E08712C321CC191500FD766A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E08712C621CC191500FD766A /* StickersWhatsapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StickersWhatsapp.xcdatamodel; sourceTree = "<group>"; };
 		E08712C821CC191700FD766A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E08712CB21CC191700FD766A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E08712CD21CC191700FD766A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E09A606E21CD4864002A560D /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
+		E09A607021CD4A88002A560D /* DetalhesListaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesListaCollectionViewCell.swift; sourceTree = "<group>"; };
+		E09A607721CD5FF4002A560D /* StickersWhatsapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StickersWhatsapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		E09A607921CD5FF5002A560D /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		E09A607E21CD5FF5002A560D /* WebPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPManager.swift; sourceTree = "<group>"; };
+		E09A607F21CD5FF5002A560D /* StickerPackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPackManager.swift; sourceTree = "<group>"; };
+		E09A608221CD5FF5002A560D /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		E09A608421CD5FF5002A560D /* Limits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Limits.swift; sourceTree = "<group>"; };
+		E09A608521CD5FF6002A560D /* Interoperability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interoperability.swift; sourceTree = "<group>"; };
+		E09A608621CD5FF6002A560D /* StickerPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPack.swift; sourceTree = "<group>"; };
+		E09A60BC21CD6D97002A560D /* tray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tray.png; sourceTree = "<group>"; };
+		E09A60DA21CD737E002A560D /* Figurinhas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figurinhas.swift; sourceTree = "<group>"; };
+		E0F2AC6B21D95F6F00A90C71 /* SobreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreTableViewCell.swift; sourceTree = "<group>"; };
+		E0F2AC6D21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreComBotaoTableViewCell.swift; sourceTree = "<group>"; };
+		E0F2AC6F21D95F8C00A90C71 /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
+		E0F2AC7321D9946600A90C71 /* PreencherNomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreencherNomeViewController.swift; sourceTree = "<group>"; };
+		E0FE2AE321CD019F004F216A /* EmAltaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmAltaTableViewController.swift; sourceTree = "<group>"; };
+		E0FE2AE521CD01AD004F216A /* EmAltaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmAltaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +127,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0234A9821D8EA9B00643102 /* WebP.framework in Frameworks */,
+				35B254205721D12949500004 /* Pods_StickersWhatsapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25B76BAA13DC0C97A6910CA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5F39E4D80A247B93666C45A /* Pods-StickersWhatsapp.debug.xcconfig */,
+				1EBD8ED20EDE3A4DDBA09CE7 /* Pods-StickersWhatsapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79CE5DEA54C20BAB4EF6843D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0234A9721D8EA9B00643102 /* WebP.framework */,
+				5BB529A1C0EE6D7FCE79BA36 /* Pods_StickersWhatsapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E009A3E121DD17E600EAE9B7 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				E009A3E221DD195400EAE9B7 /* TutorialViewController.swift */,
+				E009A3E421DD197000EAE9B7 /* TutorialCollectionViewCell.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		E009A3FC21DE1D3200EAE9B7 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				E06CABFC21D5395500BEE962 /* BotaoComShadow.swift */,
+				E06CABFE21D5424B00BEE962 /* Gif.swift */,
+				E036935B21D65B38004920C5 /* Extensoes.swift */,
+				E009A3FD21DE1D6900EAE9B7 /* GradientView.swift */,
+				E009A3FF21DE20CE00EAE9B7 /* UIImageColors.swift */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
+		E0234AA821D8F09C00643102 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E009A3EC21DD35D000EAE9B7 /* PacotesFavoritos+CoreDataClass.swift */,
+				E009A3ED21DD35D000EAE9B7 /* PacotesFavoritos+CoreDataProperties.swift */,
+				E009A3EE21DD35D000EAE9B7 /* PacotesUsuario+CoreDataClass.swift */,
+				E009A3EF21DD35D000EAE9B7 /* PacotesUsuario+CoreDataProperties.swift */,
+				E009A3F021DD35D000EAE9B7 /* ImagensUsuario+CoreDataClass.swift */,
+				E009A3F121DD35D000EAE9B7 /* ImagensUsuario+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		E08712B221CC191500FD766A = {
 			isa = PBXGroup;
 			children = (
 				E08712BD21CC191500FD766A /* StickersWhatsapp */,
 				E08712BC21CC191500FD766A /* Products */,
+				25B76BAA13DC0C97A6910CA0 /* Pods */,
+				79CE5DEA54C20BAB4EF6843D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +208,112 @@
 		E08712BD21CC191500FD766A /* StickersWhatsapp */ = {
 			isa = PBXGroup;
 			children = (
+				E009A3FC21DE1D3200EAE9B7 /* Componentes */,
+				E009A3E121DD17E600EAE9B7 /* Tutorial */,
+				E0234AA821D8F09C00643102 /* CoreData */,
+				E09A609721CD6255002A560D /* Imagens */,
+				E09A607621CD5FD5002A560D /* WhatsApp */,
+				E09A606D21CD484E002A560D /* Detalhes */,
+				E0FE2AE221CD018A004F216A /* Favoritos */,
+				E0FE2AE121CD017F004F216A /* CriarOseu */,
+				E0FE2AE021CD016D004F216A /* EmAlta */,
+				E0F2AC6A21D95F2D00A90C71 /* Sobre */,
 				E08712BE21CC191500FD766A /* AppDelegate.swift */,
-				E08712C021CC191500FD766A /* ViewController.swift */,
 				E08712C221CC191500FD766A /* Main.storyboard */,
 				E08712C821CC191700FD766A /* Assets.xcassets */,
 				E08712CA21CC191700FD766A /* LaunchScreen.storyboard */,
 				E08712CD21CC191700FD766A /* Info.plist */,
 				E08712C521CC191500FD766A /* StickersWhatsapp.xcdatamodeld */,
+				E09A60DA21CD737E002A560D /* Figurinhas.swift */,
 			);
 			path = StickersWhatsapp;
+			sourceTree = "<group>";
+		};
+		E09A606D21CD484E002A560D /* Detalhes */ = {
+			isa = PBXGroup;
+			children = (
+				E09A606E21CD4864002A560D /* DetalhesViewController.swift */,
+				E09A607021CD4A88002A560D /* DetalhesListaCollectionViewCell.swift */,
+			);
+			path = Detalhes;
+			sourceTree = "<group>";
+		};
+		E09A607621CD5FD5002A560D /* WhatsApp */ = {
+			isa = PBXGroup;
+			children = (
+				E09A608221CD5FF5002A560D /* ImageData.swift */,
+				E09A608521CD5FF6002A560D /* Interoperability.swift */,
+				E09A608421CD5FF5002A560D /* Limits.swift */,
+				E09A607921CD5FF5002A560D /* Sticker.swift */,
+				E09A608621CD5FF6002A560D /* StickerPack.swift */,
+				E09A607F21CD5FF5002A560D /* StickerPackManager.swift */,
+				E09A607E21CD5FF5002A560D /* WebPManager.swift */,
+				E09A607721CD5FF4002A560D /* StickersWhatsapp-Bridging-Header.h */,
+				E0234AA121D8EAAD00643102 /* YYAnimatedImageView.h */,
+				E0234A9921D8EAAD00643102 /* YYAnimatedImageView.m */,
+				E0234A9D21D8EAAD00643102 /* YYFrameImage.h */,
+				E0234A9E21D8EAAD00643102 /* YYFrameImage.m */,
+				E0234A9A21D8EAAD00643102 /* YYImage.h */,
+				E0234A9B21D8EAAD00643102 /* YYImage.m */,
+				E0234A9C21D8EAAD00643102 /* YYImageCoder.h */,
+				E0234AA221D8EAAE00643102 /* YYImageCoder.m */,
+				E0234A9F21D8EAAD00643102 /* YYSpriteSheetImage.h */,
+				E0234AA021D8EAAD00643102 /* YYSpriteSheetImage.m */,
+			);
+			path = WhatsApp;
+			sourceTree = "<group>";
+		};
+		E09A609721CD6255002A560D /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				E09A60BC21CD6D97002A560D /* tray.png */,
+			);
+			path = Imagens;
+			sourceTree = "<group>";
+		};
+		E0F2AC6A21D95F2D00A90C71 /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				E0F2AC6B21D95F6F00A90C71 /* SobreTableViewCell.swift */,
+				E0F2AC6D21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift */,
+				E0F2AC6F21D95F8C00A90C71 /* SobreViewController.swift */,
+			);
+			path = Sobre;
+			sourceTree = "<group>";
+		};
+		E0FE2AE021CD016D004F216A /* EmAlta */ = {
+			isa = PBXGroup;
+			children = (
+				E0FE2AE321CD019F004F216A /* EmAltaTableViewController.swift */,
+				E0FE2AE521CD01AD004F216A /* EmAltaTableViewCell.swift */,
+				E009A3D121DCD5E700EAE9B7 /* EmAltaPropagandaTableViewCell.swift */,
+			);
+			path = EmAlta;
+			sourceTree = "<group>";
+		};
+		E0FE2AE121CD017F004F216A /* CriarOseu */ = {
+			isa = PBXGroup;
+			children = (
+				E06CAC0421D5461100BEE962 /* crie_o_seu_.gif */,
+				E06CAC0221D542CA00BEE962 /* CriarOSeuViewController.swift */,
+				E06CAC2621D63C4000BEE962 /* UsuarioCriandoViewController.swift */,
+				E036935721D64442004920C5 /* CameraCropController.swift */,
+				E036935921D64AF3004920C5 /* RevisaoViewController.swift */,
+				E0F2AC7321D9946600A90C71 /* PreencherNomeViewController.swift */,
+				E009A3F821DD52FC00EAE9B7 /* ListaCriadaPeloUsuarioTableViewCell.swift */,
+				E009A3FA21DD55BC00EAE9B7 /* ListaCriadaPeloUsuarioCollectionViewCell.swift */,
+			);
+			path = CriarOseu;
+			sourceTree = "<group>";
+		};
+		E0FE2AE221CD018A004F216A /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+				E0234AB521D9005100643102 /* FavoritosViewController.swift */,
+				E0234AB721D9006900643102 /* FavoritosCelulaTableViewCell.swift */,
+				E0234AB921D9007600643102 /* FavoritosVazioTableViewCell.swift */,
+			);
+			path = Favoritos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +323,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E08712D021CC191700FD766A /* Build configuration list for PBXNativeTarget "StickersWhatsapp" */;
 			buildPhases = (
+				F3698C3924837F5B9D34390D /* [CP] Check Pods Manifest.lock */,
 				E08712B721CC191500FD766A /* Sources */,
 				E08712B821CC191500FD766A /* Frameworks */,
 				E08712B921CC191500FD766A /* Resources */,
+				8812BA6CBB1EA7E43DA998A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +350,7 @@
 				TargetAttributes = {
 					E08712BA21CC191500FD766A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -107,7 +359,6 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = E08712B221CC191500FD766A;
@@ -125,22 +376,118 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E09A60BD21CD6D98002A560D /* tray.png in Resources */,
 				E08712CC21CC191700FD766A /* LaunchScreen.storyboard in Resources */,
 				E08712C921CC191700FD766A /* Assets.xcassets in Resources */,
+				E06CAC0521D5461100BEE962 /* crie_o_seu_.gif in Resources */,
 				E08712C421CC191500FD766A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8812BA6CBB1EA7E43DA998A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StickersWhatsapp/Pods-StickersWhatsapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FaveButton/FaveButton.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEventBus/SwiftEventBus.framework",
+				"${PODS_ROOT}/TinyCrayon/TCMask.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaveButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEventBus.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TCMask.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StickersWhatsapp/Pods-StickersWhatsapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3698C3924837F5B9D34390D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StickersWhatsapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E08712B721CC191500FD766A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E08712C121CC191500FD766A /* ViewController.swift in Sources */,
+				E09A608E21CD5FF6002A560D /* StickerPackManager.swift in Sources */,
+				E09A606F21CD4864002A560D /* DetalhesViewController.swift in Sources */,
+				E0234AB821D9006900643102 /* FavoritosCelulaTableViewCell.swift in Sources */,
+				E09A608D21CD5FF6002A560D /* WebPManager.swift in Sources */,
+				E009A3D221DCD5E700EAE9B7 /* EmAltaPropagandaTableViewCell.swift in Sources */,
+				E0234AA321D8EAAE00643102 /* YYAnimatedImageView.m in Sources */,
+				E009A3F921DD52FC00EAE9B7 /* ListaCriadaPeloUsuarioTableViewCell.swift in Sources */,
+				E06CABFF21D5424B00BEE962 /* Gif.swift in Sources */,
+				E036935C21D65B38004920C5 /* Extensoes.swift in Sources */,
+				E009A40021DE20CE00EAE9B7 /* UIImageColors.swift in Sources */,
+				E0234AA721D8EAAE00643102 /* YYImageCoder.m in Sources */,
+				E0F2AC6C21D95F6F00A90C71 /* SobreTableViewCell.swift in Sources */,
+				E009A3E321DD195400EAE9B7 /* TutorialViewController.swift in Sources */,
+				E0234ABA21D9007600643102 /* FavoritosVazioTableViewCell.swift in Sources */,
+				E0234AB621D9005100643102 /* FavoritosViewController.swift in Sources */,
 				E08712C721CC191500FD766A /* StickersWhatsapp.xcdatamodeld in Sources */,
+				E009A3E521DD197000EAE9B7 /* TutorialCollectionViewCell.swift in Sources */,
+				E0234AA621D8EAAE00643102 /* YYSpriteSheetImage.m in Sources */,
+				E0FE2AE421CD019F004F216A /* EmAltaTableViewController.swift in Sources */,
+				E09A609021CD5FF6002A560D /* ImageData.swift in Sources */,
+				E09A609121CD5FF6002A560D /* Limits.swift in Sources */,
+				E0234AA521D8EAAE00643102 /* YYFrameImage.m in Sources */,
+				E0F2AC7421D9946600A90C71 /* PreencherNomeViewController.swift in Sources */,
+				E0F2AC7021D95F8D00A90C71 /* SobreViewController.swift in Sources */,
+				E009A3FE21DE1D6900EAE9B7 /* GradientView.swift in Sources */,
+				E036935A21D64AF3004920C5 /* RevisaoViewController.swift in Sources */,
+				E09A609221CD5FF6002A560D /* Interoperability.swift in Sources */,
 				E08712BF21CC191500FD766A /* AppDelegate.swift in Sources */,
+				E09A609321CD5FF6002A560D /* StickerPack.swift in Sources */,
+				E06CABFD21D5395500BEE962 /* BotaoComShadow.swift in Sources */,
+				E09A608921CD5FF6002A560D /* Sticker.swift in Sources */,
+				E009A3FB21DD55BC00EAE9B7 /* ListaCriadaPeloUsuarioCollectionViewCell.swift in Sources */,
+				E0234AA421D8EAAE00643102 /* YYImage.m in Sources */,
+				E036935821D64442004920C5 /* CameraCropController.swift in Sources */,
+				E0F2AC6E21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift in Sources */,
+				E09A607121CD4A88002A560D /* DetalhesListaCollectionViewCell.swift in Sources */,
+				E06CAC2721D63C4000BEE962 /* UsuarioCriandoViewController.swift in Sources */,
+				E0FE2AE621CD01AD004F216A /* EmAltaTableViewCell.swift in Sources */,
+				E09A60DB21CD737E002A560D /* Figurinhas.swift in Sources */,
+				E06CAC0321D542CA00BEE962 /* CriarOSeuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -231,6 +579,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -284,37 +633,66 @@
 		};
 		E08712D121CC191700FD766A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5F39E4D80A247B93666C45A /* Pods-StickersWhatsapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NR3L46TQBK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StickersWhatsapp",
+					"$(PROJECT_DIR)/Pods/YYImage/Vendor",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"SD_WEBP=1",
+				);
 				INFOPLIST_FILE = StickersWhatsapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.lailanrogerio.StickersWhatsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StickersWhatsapp/WhatsApp/StickersWhatsapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E08712D221CC191700FD766A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EBD8ED20EDE3A4DDBA09CE7 /* Pods-StickersWhatsapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NR3L46TQBK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StickersWhatsapp",
+					"$(PROJECT_DIR)/Pods/YYImage/Vendor",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"SD_WEBP=1",
+				);
 				INFOPLIST_FILE = StickersWhatsapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.lailanrogerio.StickersWhatsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StickersWhatsapp/WhatsApp/StickersWhatsapp-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

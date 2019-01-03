@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544~1458002511")
+        if UserDefaults.standard.bool(forKey: "usuarioFinalizouTutorial"){
+           definirRootViewController("idSb_tela_principal")
+           UserDefaults.standard.set(true, forKey: "usuarioFinalizouTutorial")
+        } else {
+            definirRootViewController("idSb_tutorial")
+        }
+        incrementarVezesQueOAppAbriu()
+        showReview()
         return true
     }
 
@@ -88,6 +97,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
+    
+    func definirRootViewController(_ nome:String) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: nome)
+        if let window = self.window {
+            window.rootViewController = viewController
+        }
+    }
+    
+    let runIncrementerSetting = "numberOfRuns"
+    let minimumRunCount = 3
+    
+    func incrementarVezesQueOAppAbriu() {
+        let usD = UserDefaults()
+        let runs = receberQuantasVezesAplicativoAbriu() + 1
+        usD.setValuesForKeys([runIncrementerSetting: runs])
+        usD.synchronize()
+    }
+    
+    func receberQuantasVezesAplicativoAbriu () -> Int {
+        let usD = UserDefaults()
+        let savedRuns = usD.value(forKey: runIncrementerSetting)
+        
+        var runs = 0
+        if (savedRuns != nil) {
+            runs = savedRuns as! Int
+        }
+        return runs
+    }
+    
+    func showReview() {
+        let runs = receberQuantasVezesAplicativoAbriu()
+        if (runs == minimumRunCount || runs == minimumRunCount + 8 || runs == minimumRunCount + 23) {
+            if #available(iOS 10.3, *) {
+                SKStoreReviewController.requestReview()
+            } else {
+            }
+        } else {
+        }
+    }
+    
+    
 }
 
