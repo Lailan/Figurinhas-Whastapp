@@ -1,0 +1,54 @@
+PODS:
+  - FaveButton (3.0.0)
+  - Google-Mobile-Ads-SDK (7.37.0)
+  - PryntTrimmerView (3.0.0)
+  - SteviaLayout (4.4.0)
+  - SwiftEventBus (3.0.1)
+  - TinyCrayon (3.3.2):
+    - TinyCrayon/TCCore (= 3.3.2)
+    - TinyCrayon/TCMask (= 3.3.2)
+  - TinyCrayon/TCCore (3.3.2)
+  - TinyCrayon/TCMask (3.3.2):
+    - TinyCrayon/TCCore
+  - YPImagePicker (3.5.2):
+    - PryntTrimmerView (~> 3.0.0)
+    - SteviaLayout (~> 4.4.0)
+
+DEPENDENCIES:
+  - FaveButton
+  - Google-Mobile-Ads-SDK
+  - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`, tag `3.0.1`)
+  - TinyCrayon
+  - YPImagePicker
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FaveButton
+    - Google-Mobile-Ads-SDK
+    - PryntTrimmerView
+    - SteviaLayout
+    - TinyCrayon
+    - YPImagePicker
+
+EXTERNAL SOURCES:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 3.0.1
+
+CHECKOUT OPTIONS:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 3.0.1
+
+SPEC CHECKSUMS:
+  FaveButton: 1fa9cd7b037d7164e229765401931271adbe3a23
+  Google-Mobile-Ads-SDK: d028682d7450749a1955679da050eaf70d997b3e
+  PryntTrimmerView: 53ac64053c7ce63cb3e27f54090f52da0734891d
+  SteviaLayout: dd74d1abd127bbf0ce346ac9430441684fe427d0
+  SwiftEventBus: 87ccaeceff91b748775e37751ae3a81ec815b3d5
+  TinyCrayon: 1950ca37477d4198a7f790f7811cac1e20f9e108
+  YPImagePicker: 26d5bf7bfe1cffd1c5eedea3ac60422b314e2a42
+
+PODFILE CHECKSUM: 5a73f50fd08ebaa4d1cfe6be82bb5ec0e7330981
+
+COCOAPODS: 1.5.3
