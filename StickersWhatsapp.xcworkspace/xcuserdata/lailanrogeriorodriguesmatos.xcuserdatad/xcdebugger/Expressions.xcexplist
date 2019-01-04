@@ -42,6 +42,14 @@
          contextName = "UsuarioCriandoViewController.ajustarURLImagem(_:):UsuarioCriandoViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "PreencherNomeViewController.viewDidLoad():PreencherNomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " UserDefaults.standard.string(forKey: &quot;Nome_Usuario&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "AppDelegate.application(_:didFinishLaunchingWithOptions:):AppDelegate.swift">
          <PersistentStrings>
             <PersistentString

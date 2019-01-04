@@ -11,8 +11,9 @@ import TCMask
 import YPImagePicker
 import SwiftEventBus
 import CoreData
+import GoogleMobileAds
 
-class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImagePickerDelegate {
+class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImagePickerDelegate, GADInterstitialDelegate {
     
     var listaImagensUsuario:Array<UIImage> = []
     var cameraController = CameraCropController()
@@ -22,6 +23,7 @@ class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImag
     
     var nome = ""
     var criador = ""
+    var interstitial: GADInterstitial!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,20 @@ class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImag
         collectionView.dataSource = self
         viewContinuar.alpha = 0
         aguardandoEventos()
+        self.validarSePodeContinuar(quantidadeFotos: self.listaImagensUsuario.count)
+        interstitial = createAndLoadInterstitial()
+    }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-9256224221848252/8152155719")
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+        return interstitial
+    }
+    
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        interstitial = createAndLoadInterstitial()
+        abrirTelaPreencherNome(usuarioClicouVoltar:false)
     }
     
     func aguardandoEventos(){
@@ -53,8 +69,11 @@ class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImag
             let dados  = result!.object as! [String]
             self.nome = dados[0]
             self.criador = dados[1]
+            self.apagarDoBancoDeDados(identificador: self.nome)
             self.gravarNoBancoDeDados(identificador: self.nome, imagensEditadas: self.listaImagensUsuario)
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: {
+                SwiftEventBus.post("Recarregar_tabela")
+            })
             
         }
     }
@@ -64,23 +83,32 @@ class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImag
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PacotesUsuario")
         fetchRequest.predicate = NSPredicate(format: "identificador == %@", identificador)
+        let pacoteUsuario = PacotesUsuario(context: context)
+        pacoteUsuario.identificador = identificador
+        pacoteUsuario.corPrimaria = self.processarCores((imagensEditadas.first?.getColors())!, tipo: 0)
+        pacoteUsuario.corSecundaria = self.processarCores((imagensEditadas.first?.getColors())!, tipo: 1)
+        for i in 0..<imagensEditadas.count{
+            let imagemUsuario = ImagensUsuario(context: context)
+            imagemUsuario.imagem = imagensEditadas[i].pngData()
+            pacoteUsuario.addToImagem(imagemUsuario)
+        }
         do {
-            let results = try context.fetch(fetchRequest) as? [NSManagedObject]
-            if results?.count != 0 {
-                results![0].setValue(identificador, forKeyPath: "identificador")
-            } else {
-              let pacoteUsuario = PacotesUsuario(context: context)
-                pacoteUsuario.identificador = identificador
-                pacoteUsuario.corPrimaria = self.processarCores((imagensEditadas.first?.getColors())!, tipo: 0)
-                pacoteUsuario.corSecundaria = self.processarCores((imagensEditadas.first?.getColors())!, tipo: 1)
-                for i in 0..<imagensEditadas.count{
-                    let imagemUsuario = ImagensUsuario(context: context)
-                    imagemUsuario.imagem = imagensEditadas[i].pngData()
-                    pacoteUsuario.addToImagem(imagemUsuario)
-                }
+            try context.save()
+        }
+        catch {
+            print("Saving Core Data Failed: \(error)")
+        }
+    }
+    
+    func apagarDoBancoDeDados(identificador:String) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PacotesUsuario")
+        fetchRequest.predicate = NSPredicate(format: "identificador == %@", identificador)
+        if let result = try? context.fetch(fetchRequest) {
+            for object in result {
+                context.delete(object as! NSManagedObject)
             }
-        } catch {
-            print("Fetch Failed: \(error)")
         }
         do {
             try context.save()
@@ -131,12 +159,12 @@ class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImag
         if !self.listaImagensUsuario.isEmpty {
             let modal = UIAlertController(title: "Atenção", message: "Deseja salvar o seu progresso para continuar depois?", preferredStyle: .actionSheet)
             let acaoRemover = UIAlertAction(title: "Salvar as figurinhas", style: .default) { (action) in
-                let telaSolicitarNome = self.storyboard?.instantiateViewController(withIdentifier: "idSB_preencher_nome") as! PreencherNomeViewController
-                telaSolicitarNome.usuarioCilcouVoltar = true
-                self.present(telaSolicitarNome, animated: false, completion: nil)
+                self.abrirTelaPreencherNome(usuarioClicouVoltar:true)
             }
             let acaoApagar = UIAlertAction(title: "Apagar as figurinhas", style: .destructive) { (action) in
                 self.dismiss(animated: true, completion: nil)
+                self.apagarDoBancoDeDados(identificador: self.nome)
+                SwiftEventBus.post("Recarregar_tabela")
             }
             let acaoCancelar = UIAlertAction(title: "Cancelar", style: .cancel) { (action) in
                 
@@ -178,7 +206,17 @@ class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImag
     
     
     @IBAction func botaoFinalizar(_ sender: Any) {
-        let telaSolicitarNome = storyboard?.instantiateViewController(withIdentifier: "idSB_preencher_nome") as! PreencherNomeViewController
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        } else {
+            abrirTelaPreencherNome(usuarioClicouVoltar:false)
+        }
+    }
+    
+    func abrirTelaPreencherNome(usuarioClicouVoltar:Bool){
+        let telaSolicitarNome = self.storyboard?.instantiateViewController(withIdentifier: "idSB_preencher_nome") as! PreencherNomeViewController
+        telaSolicitarNome.nome = self.nome
+        telaSolicitarNome.usuarioCilcouVoltar = usuarioClicouVoltar
         self.present(telaSolicitarNome, animated: false, completion: nil)
     }
     
@@ -198,7 +236,7 @@ class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImag
                 try stickerPack.addSticker(imageData: imagemWebpData, type: ImageDataExtension(rawValue: "webp")!, emojis: [""])
             }
             stickerPack.sendToWhatsApp { completed in
-
+                
             }
         } catch {
             let modal = UIAlertController(title: "Ops!", message: "Não foi possível gerar as figurinhas devido ao erro: \n\(error)", preferredStyle: .alert)
@@ -253,7 +291,34 @@ class UsuarioCriandoViewController: UIViewController, TCMaskViewDelegate, YPImag
             }
         }
     }
-
+    
+    /// Tells the delegate an ad request succeeded.
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        print("interstitialDidReceiveAd")
+    }
+    
+    /// Tells the delegate an ad request failed.
+    func interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
+        print("interstitial:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+    
+    /// Tells the delegate that an interstitial will be presented.
+    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
+        print("interstitialWillPresentScreen")
+    }
+    
+    /// Tells the delegate the interstitial is to be animated off the screen.
+    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
+        print("interstitialWillDismissScreen")
+    }
+    
+    
+    /// Tells the delegate that a user click will open another app
+    /// (such as the App Store), backgrounding the current app.
+    func interstitialWillLeaveApplication(_ ad: GADInterstitial) {
+        print("interstitialWillLeaveApplication")
+    }
+    
     
 }
 

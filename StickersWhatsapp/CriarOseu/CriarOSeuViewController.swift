@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import SwiftEventBus
+import GoogleMobileAds
 
 class CriarOSeuViewController: UIViewController {
     
@@ -43,6 +45,18 @@ class CriarOSeuViewController: UIViewController {
             self.tableView.isHidden = true
             Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector(animarTexto), userInfo: nil, repeats: false)
             Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(animarBotaoIniciar), userInfo: nil, repeats: false)
+        }
+        SwiftEventBus.onMainThread(self, name:"Recarregar_tabela") { result in
+            self.listaFigurinhasCriadasPeloUsuario = self.prepararLista(self.consultarPacotesCriadosPeloUsuario())
+            if self.listaFigurinhasCriadasPeloUsuario.isEmpty {
+                self.viewBotaoIniciar.alpha = 1
+                self.viewTexto.alpha = 1
+                self.tableView.isHidden = true
+            } else {
+                self.viewTexto.alpha = 0
+                self.tableView.isHidden = false
+            }
+            self.tableView.reloadData()
         }
     }
     
@@ -112,16 +126,25 @@ extension CriarOSeuViewController : UITableViewDelegate, UITableViewDataSource {
         let celula = tableView.dequeueReusableCell(withIdentifier: "celula_lista_criada_usuario", for: indexPath) as! ListaCriadaPeloUsuarioTableViewCell
         celula.nome.text = listaFigurinhasCriadasPeloUsuario[indexPath.row].nome
         celula.processarLista(listaFigurinhasCriadasPeloUsuario[indexPath.row].imagens)
-        celula.viewGradiente.topColor = listaFigurinhasCriadasPeloUsuario[indexPath.row].corPrimaria
-        celula.viewGradiente.bottomColor = listaFigurinhasCriadasPeloUsuario[indexPath.row].corSecundaria
+//        celula.viewGradiente.topColor = listaFigurinhasCriadasPeloUsuario[indexPath.row].corPrimaria
+//        celula.viewGradiente.bottomColor = listaFigurinhasCriadasPeloUsuario[indexPath.row].corSecundaria
         celula.collectionView.reloadData()
         return celula
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 170
+        return 200
     }
-    
+ 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let criarViewController = storyboard?.instantiateViewController(withIdentifier: "idSb_criando_meu_pacote") as! UsuarioCriandoViewController
+        criarViewController.listaImagensUsuario = listaFigurinhasCriadasPeloUsuario[indexPath.row].imagens
+        criarViewController.nome = listaFigurinhasCriadasPeloUsuario[indexPath.row].nome
+        DispatchQueue.main.async {
+            self.present(criarViewController, animated: true, completion: nil)
+        }
+        
+    }
     
 }
 

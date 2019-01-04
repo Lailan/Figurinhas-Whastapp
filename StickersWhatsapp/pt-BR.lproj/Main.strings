@@ -1,0 +1,117 @@
+
+/* Class = "UILabel"; text = "Adicionar ao WhatsApp"; ObjectID = "1bi-GL-kWI"; */
+"1bi-GL-kWI.text" = "Adicionar ao WhatsApp";
+
+/* Class = "UILabel"; text = "- Escolha no mínimo 3 e no máximo 30 imagens."; ObjectID = "5eX-Uj-LIb"; */
+"5eX-Uj-LIb.text" = "- Escolha no mínimo 3 e no máximo 30 imagens.";
+
+/* Class = "UILabel"; text = "Obrigado por baixar o Figurinhas para WhatsApp! Esse aplicativo foi feito com o intuito de ter sua usabilidade focada no usuário.  Prezamos a qualidade e sua diversão enquanto utiliza o app!"; ObjectID = "6KV-QR-Y8h"; */
+"6KV-QR-Y8h.text" = "Obrigado por baixar o Figurinhas para WhatsApp! Esse aplicativo foi feito com o intuito de ter sua usabilidade focada no usuário.  Prezamos a qualidade e sua diversão enquanto utiliza o app!";
+
+/* Class = "UINavigationItem"; title = "Em alta"; ObjectID = "8QQ-kY-dOT"; */
+"8QQ-kY-dOT.title" = "Em alta";
+
+/* Class = "UILabel"; text = "- Compartilhe para o WhatsApp"; ObjectID = "8ty-rt-iIv"; */
+"8ty-rt-iIv.text" = "- Compartilhe para o WhatsApp";
+
+/* Class = "UILabel"; text = "Criando meu pacote de figurinhas"; ObjectID = "DpH-Ee-0Cj"; */
+"DpH-Ee-0Cj.text" = "Criando meu pacote de figurinhas";
+
+/* Class = "UITabBarItem"; title = "Sobre"; ObjectID = "Ej4-fy-hNe"; */
+"Ej4-fy-hNe.title" = "Sobre";
+
+/* Class = "UIButton"; normalTitle = "Voltar"; ObjectID = "Fe1-Mu-qJw"; */
+"Fe1-Mu-qJw.normalTitle" = "Voltar";
+
+/* Class = "UILabel"; text = "Você precisa adicionar no mínimo 3 imagens para exportar"; ObjectID = "IxP-XJ-iMV"; */
+"IxP-XJ-iMV.text" = "Você precisa adicionar no mínimo 3 imagens para exportar";
+
+/* Class = "UILabel"; text = "Figurinhas Braw"; ObjectID = "Jkj-kP-nro"; */
+"Jkj-kP-nro.text" = "Figurinhas Braw";
+
+/* Class = "UILabel"; text = "- Utilize as ferramentas de recorte para refinar sua figurinha."; ObjectID = "KEg-If-qVa"; */
+"KEg-If-qVa.text" = "- Utilize as ferramentas de recorte para refinar sua figurinha.";
+
+/* Class = "UILabel"; text = "Quase lá"; ObjectID = "KxJ-xt-jAD"; */
+"KxJ-xt-jAD.text" = "Quase lá";
+
+/* Class = "UINavigationItem"; title = "Figurinhas"; ObjectID = "LEG-ys-gMb"; */
+"LEG-ys-gMb.title" = "Figurinhas";
+
+/* Class = "UILabel"; text = "Criado por"; ObjectID = "OeJ-pV-Ccm"; */
+"OeJ-pV-Ccm.text" = "Criado por";
+
+/* Class = "UILabel"; text = "Gostou do aplicativo?"; ObjectID = "PzO-TW-l4z"; */
+"PzO-TW-l4z.text" = "Gostou do aplicativo?";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "SOQ-p9-sSZ"; */
+"SOQ-p9-sSZ.title" = "Item 2";
+
+/* Class = "UILabel"; text = "- Crie suas próprias figurinhas!"; ObjectID = "Ttd-VB-LBa"; */
+"Ttd-VB-LBa.text" = "- Crie suas próprias figurinhas!";
+
+/* Class = "UIButton"; normalTitle = "Avançar"; ObjectID = "Uov-iJ-MOH"; */
+"Uov-iJ-MOH.normalTitle" = "Avançar";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "Ur2-WQ-6Ie"; */
+"Ur2-WQ-6Ie.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "Nome do pacote"; ObjectID = "Uxe-hD-lf4"; */
+"Uxe-hD-lf4.text" = "Nome do pacote";
+
+/* Class = "UILabel"; text = "Tenha seus melhores amigos!"; ObjectID = "Yp6-5U-5Uv"; */
+"Yp6-5U-5Uv.text" = "Tenha seus melhores amigos!";
+
+/* Class = "UIButton"; normalTitle = "Adorei, pode adicionar!"; ObjectID = "ary-jc-pvc"; */
+"ary-jc-pvc.normalTitle" = "Adorei, pode adicionar!";
+
+/* Class = "UILabel"; text = "Gostou?"; ObjectID = "bzN-Jx-1zZ"; */
+"bzN-Jx-1zZ.text" = "Gostou?";
+
+/* Class = "UILabel"; text = "- Use sua imaginação."; ObjectID = "df3-tq-VId"; */
+"df3-tq-VId.text" = "- Use sua imaginação.";
+
+/* Class = "UIButton"; normalTitle = "Preciso voltar para edição"; ObjectID = "eKF-R2-4sw"; */
+"eKF-R2-4sw.normalTitle" = "Preciso voltar para edição";
+
+/* Class = "UILabel"; text = "Nome"; ObjectID = "eiC-gK-yek"; */
+"eiC-gK-yek.text" = "Nome";
+
+/* Class = "UIButton"; normalTitle = "ADICIONAR"; ObjectID = "gAz-KV-78z"; */
+"gAz-KV-78z.normalTitle" = "ADICIONAR";
+
+/* Class = "UILabel"; text = "OBTER"; ObjectID = "hGo-9Z-bju"; */
+"hGo-9Z-bju.text" = "OBTER";
+
+/* Class = "UITabBarItem"; title = "Em Alta"; ObjectID = "hk4-oU-cUb"; */
+"hk4-oU-cUb.title" = "Em Alta";
+
+/* Class = "UINavigationItem"; title = "Sobre"; ObjectID = "i6B-ya-jhK"; */
+"i6B-ya-jhK.title" = "Sobre";
+
+/* Class = "UINavigationItem"; title = "Criar o meu"; ObjectID = "jcc-z1-SuW"; */
+"jcc-z1-SuW.title" = "Criar o meu";
+
+/* Class = "UINavigationItem"; title = "Favoritos"; ObjectID = "kgx-Re-AUy"; */
+"kgx-Re-AUy.title" = "Favoritos";
+
+/* Class = "UILabel"; text = "Tenha seus melhores amigos!"; ObjectID = "mPc-2b-5RZ"; */
+"mPc-2b-5RZ.text" = "Tenha seus melhores amigos!";
+
+/* Class = "UITabBarItem"; title = "Favoritos"; ObjectID = "nxZ-Er-C5h"; */
+"nxZ-Er-C5h.title" = "Favoritos";
+
+/* Class = "UITabBarItem"; title = "Criar"; ObjectID = "u1l-hJ-Xge"; */
+"u1l-hJ-Xge.title" = "Criar";
+
+/* Class = "UILabel"; text = "Iniciar"; ObjectID = "vf8-Wx-9Cp"; */
+"vf8-Wx-9Cp.text" = "Iniciar";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "xMC-Il-xGz"; */
+"xMC-Il-xGz.title" = "Item 2";
+
+/* Class = "UILabel"; text = "Que tal começar a favoritar as suas figurinhas preferidas? "; ObjectID = "xsd-dZ-QGf"; */
+"xsd-dZ-QGf.text" = "Que tal começar a favoritar as suas figurinhas preferidas? ";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "zFX-ag-ZgT"; */
+"zFX-ag-ZgT.title" = "Item 2";
