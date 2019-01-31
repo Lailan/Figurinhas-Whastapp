@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-9256224221848252~4825308312")
+        GADMobileAds.configure(withApplicationID: "")
         if UserDefaults.standard.bool(forKey: "usuarioFinalizouTutorial"){
            definirRootViewController("idSb_tela_principal")
            UserDefaults.standard.set(true, forKey: "usuarioFinalizouTutorial")

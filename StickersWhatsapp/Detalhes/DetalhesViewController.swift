@@ -48,7 +48,7 @@ class DetalhesViewController: UIViewController, FaveButtonDelegate, GADInterstit
     }
     
     func createAndLoadInterstitial() -> GADInterstitial {
-        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-9256224221848252/8152155719")
+        let interstitial = GADInterstitial(adUnitID: "")
         interstitial.delegate = self
         interstitial.load(GADRequest())
         return interstitial
