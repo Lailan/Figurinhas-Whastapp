@@ -7,6 +7,6 @@ Criei esse projeto com o intuito de estudar/entender o funcionamento de diversos
 Devido existirem diversos aplicativos na AppStore com o mesmo intuito, este foi considerado como Spam e não consegui enviar a build. 
 Estou abrindo o projeto do mesmo, caso alguém queria incluir novas funcionalidades. 
 
-# Recursos do Projeto
+## Recursos do Projeto
 Figurinhas em Alta, criar suas proprias figurinhas, gravar figurinhas favoritas e sobre.
 
