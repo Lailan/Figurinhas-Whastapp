@@ -52,6 +52,9 @@
 		E0F2AC6E21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F2AC6D21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift */; };
 		E0F2AC7021D95F8D00A90C71 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F2AC6F21D95F8C00A90C71 /* SobreViewController.swift */; };
 		E0F2AC7421D9946600A90C71 /* PreencherNomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F2AC7321D9946600A90C71 /* PreencherNomeViewController.swift */; };
+		E0F4C0A22215D8ED000C5D8B /* Frases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4C0A12215D8ED000C5D8B /* Frases.swift */; };
+		E0F4C0A42215DF0C000C5D8B /* FrasesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4C0A32215DF0C000C5D8B /* FrasesTableViewController.swift */; };
+		E0F4C0A62215DF1A000C5D8B /* FrasesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4C0A52215DF1A000C5D8B /* FrasesTableViewCell.swift */; };
 		E0FE2AE421CD019F004F216A /* EmAltaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FE2AE321CD019F004F216A /* EmAltaTableViewController.swift */; };
 		E0FE2AE621CD01AD004F216A /* EmAltaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FE2AE521CD01AD004F216A /* EmAltaTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -118,6 +121,9 @@
 		E0F2AC6D21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreComBotaoTableViewCell.swift; sourceTree = "<group>"; };
 		E0F2AC6F21D95F8C00A90C71 /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
 		E0F2AC7321D9946600A90C71 /* PreencherNomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreencherNomeViewController.swift; sourceTree = "<group>"; };
+		E0F4C0A12215D8ED000C5D8B /* Frases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frases.swift; sourceTree = "<group>"; };
+		E0F4C0A32215DF0C000C5D8B /* FrasesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrasesTableViewController.swift; sourceTree = "<group>"; };
+		E0F4C0A52215DF1A000C5D8B /* FrasesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrasesTableViewCell.swift; sourceTree = "<group>"; };
 		E0FE2AE321CD019F004F216A /* EmAltaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmAltaTableViewController.swift; sourceTree = "<group>"; };
 		E0FE2AE521CD01AD004F216A /* EmAltaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmAltaTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,6 +214,7 @@
 		E08712BD21CC191500FD766A /* StickersWhatsapp */ = {
 			isa = PBXGroup;
 			children = (
+				E0F4C0A02215D8DC000C5D8B /* Frases */,
 				E009A3FC21DE1D3200EAE9B7 /* Componentes */,
 				E009A3E121DD17E600EAE9B7 /* Tutorial */,
 				E0234AA821D8F09C00643102 /* CoreData */,
@@ -279,6 +286,16 @@
 				E0F2AC6F21D95F8C00A90C71 /* SobreViewController.swift */,
 			);
 			path = Sobre;
+			sourceTree = "<group>";
+		};
+		E0F4C0A02215D8DC000C5D8B /* Frases */ = {
+			isa = PBXGroup;
+			children = (
+				E0F4C0A12215D8ED000C5D8B /* Frases.swift */,
+				E0F4C0A32215DF0C000C5D8B /* FrasesTableViewController.swift */,
+				E0F4C0A52215DF1A000C5D8B /* FrasesTableViewCell.swift */,
+			);
+			path = Frases;
 			sourceTree = "<group>";
 		};
 		E0FE2AE021CD016D004F216A /* EmAlta */ = {
@@ -457,6 +474,7 @@
 				E009A3F921DD52FC00EAE9B7 /* ListaCriadaPeloUsuarioTableViewCell.swift in Sources */,
 				E06CABFF21D5424B00BEE962 /* Gif.swift in Sources */,
 				E036935C21D65B38004920C5 /* Extensoes.swift in Sources */,
+				E0F4C0A22215D8ED000C5D8B /* Frases.swift in Sources */,
 				E009A40021DE20CE00EAE9B7 /* UIImageColors.swift in Sources */,
 				E0234AA721D8EAAE00643102 /* YYImageCoder.m in Sources */,
 				E0F2AC6C21D95F6F00A90C71 /* SobreTableViewCell.swift in Sources */,
@@ -482,10 +500,12 @@
 				E009A3FB21DD55BC00EAE9B7 /* ListaCriadaPeloUsuarioCollectionViewCell.swift in Sources */,
 				E0234AA421D8EAAE00643102 /* YYImage.m in Sources */,
 				E036935821D64442004920C5 /* CameraCropController.swift in Sources */,
+				E0F4C0A42215DF0C000C5D8B /* FrasesTableViewController.swift in Sources */,
 				E0F2AC6E21D95F8300A90C71 /* SobreComBotaoTableViewCell.swift in Sources */,
 				E09A607121CD4A88002A560D /* DetalhesListaCollectionViewCell.swift in Sources */,
 				E06CAC2721D63C4000BEE962 /* UsuarioCriandoViewController.swift in Sources */,
 				E0FE2AE621CD01AD004F216A /* EmAltaTableViewCell.swift in Sources */,
+				E0F4C0A62215DF1A000C5D8B /* FrasesTableViewCell.swift in Sources */,
 				E09A60DB21CD737E002A560D /* Figurinhas.swift in Sources */,
 				E06CAC0321D542CA00BEE962 /* CriarOSeuViewController.swift in Sources */,
 			);

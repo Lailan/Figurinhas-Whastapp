@@ -86,3 +86,16 @@ extension UIColor {
         return NSString(format:"#%06x", rgb) as String
     }
 }
+
+extension UIImageView {
+    
+    /**
+     Colore uma UIImageView com a cor informada no parametro COR
+     **/
+    func colorirImagem(cor: UIColor) {
+        let templateImage = self.image?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+        self.image = templateImage
+        self.tintColor = cor
+    }
+    
+}
